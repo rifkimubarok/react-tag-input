@@ -36,7 +36,7 @@ export default class ReactTagInput extends React.Component<ReactTagInputProps, S
     const { validator, removeOnBackspace } = this.props;
 
     // On enter
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 || e.keyCode === 188) {
 
       // Prevent form submission if tag input is nested in <form>
       e.preventDefault();
